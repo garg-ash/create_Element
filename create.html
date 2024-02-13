@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After_before</title>
+</head>
+<body>
+    <!-- <div id="wrapper">
+        <button>click me</button>
+
+    </div> -->
+
+
+
+    <form action="">
+        <input type="text" placeholder="Enter Your Name">
+        <div class="dynamic">
+            <input type="text" placeholder="Mention your Skill">
+            <a href="">+</a>
+
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+    <script>
+    //   const btn = document.querySelector("button")
+    //   btn.addEventListener("click", ()=>{
+    //     const para = document.createElement("p");
+    //     para.innerHTML = "Ashish"
+    //     document.querySelector("#wrapper").append(para)
+    //   })
+
+    //   const btn = document.querySelector("button")
+    //   btn.addEventListener("click", ()=>{
+    //     const para = document.createElement("p");
+    //     para.innerHTML = "Ashish"
+          
+    //     document.querySelector("#wrapper").insertBefore(para, btn)
+    //   })
+      
+
+// const btn = document.querySelector("button")
+// btn.addEventListener("click",  ()=>
+// {
+//     const node = Document.querySelector("p")
+//     const clone = node.cloneNode (true)
+//     doucment.querySelector("#wrapper").append(para)
+// })
+
+
+const sign = document.querySelector("a")
+// const btn = document.querySelector("button")
+sign.addEventListener("click", (e)=>{
+    e.preventDefault()
+    const newInput = document.querySelector(".dynamic input").cloneNode(true)
+    // const clone = node.cloneNode(true)
+    document.querySelector(".dynamic").append(newInput)
+})
+
+
+
+// Object
+// how to create Object
+// for..of loop, for....in loop
+// Object.keys, Object.values, Object.entries
+// Object.seal, Object.freeze
+// hasOwn, hasOwnProperty
+</script>
+</body>
+</html>
